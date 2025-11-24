@@ -115,6 +115,10 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <browser>${Browser}</browser>
+                    </systemPropertyVariables>
                     <testFailureIgnore>false</testFailureIgnore>
                     <useSystemClassLoader>true</useSystemClassLoader>
                 </configuration>
