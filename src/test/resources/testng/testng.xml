@@ -4,13 +4,18 @@
 
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
-<!--        <listener class-name="listner.Retry"/>-->
+        <!--        <listener class-name="listner.Retry"/>-->
     </listeners>
 
     <test thread-count="3" name="API Tests">
         <classes>
             <class name="tests.CreateUserTest"/>
             <class name="tests.GetuserTest"/>
+        </classes>
+    </test>
+
+    <test thread-count="3" name="UI Tests">
+        <classes>
             <class name="tests.ui.tests.LoginTest"/>
         </classes>
     </test>
