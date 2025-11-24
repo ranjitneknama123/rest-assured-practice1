@@ -1,0 +1,6 @@
+Java is a popular, object-oriented, and multi-platform programming
+language and computing platform used to build a wide variety of applications,
+ from mobile apps and enterprise software to big data and cloud-based services.
+ Its design philosophy is "Write Once, Run Anywhere," which allows code to run on
+ any device that has a Java Virtual Machine (JVM), making it a versatile and
+ reliable choice for de
