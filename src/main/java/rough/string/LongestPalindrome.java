@@ -5,7 +5,7 @@ public class LongestPalindrome {
         String str = "sdffdsmadamsadsamalayalam";
         //boolean res = isPalindrome(str);
         //System.out.println(res);
-       String longPalindrome= findLongestPalindrome(str);
+        String longPalindrome = findLongestPalindrome(str);
         System.out.println(longPalindrome);
     }
 
@@ -13,12 +13,12 @@ public class LongestPalindrome {
         String longest = "";
         char[] ch = str.toCharArray();
 
-        for(int i=0;i<ch.length;i++){
-            String subStr="";
-            for(int j=i+1;j<=ch.length;j++){
-                subStr=str.substring(i,j);
-                if (isPalindrome(subStr) && subStr.length()>longest.length()){
-                    longest=subStr;
+        for (int i = 0; i < ch.length; i++) {
+            String subStr = "";
+            for (int j = i + 1; j <= ch.length; j++) {
+                subStr = str.substring(i, j);
+                if (isPalindrome(subStr) && subStr.length() > longest.length()) {
+                    longest = subStr;
                 }
             }
         }
