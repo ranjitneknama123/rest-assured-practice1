@@ -7,13 +7,13 @@ public class ArrangAscOrDesc {
 
     public static void main(String[] args) {
         Random r = new Random();
-        int a[] = new int[10];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = r.nextInt(1, 20);
+        int arr[] = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = r.nextInt(1, 20);
         }
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(arr));
         //doSorting(a, 0, a.length / 2);
-        arrangeInAsc(a, 0, a.length / 2);
+        arrangeInAsc(arr, 0, 4);
 
     }
 
