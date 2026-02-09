@@ -7,7 +7,21 @@ public class FindDuplicateWords {
     public static void main(String[] args) {
         String str = "Big black bug bit a big black dog on his big black nose";
         //reverseWords(str);
-        usingSet(str);
+        //usingSet(str);
+        getDuplicateUsingSet(str);
+
+    }
+
+    public static void getDuplicateUsingSet(String str) {
+        String[] sarr = str.split(" ");
+        HashSet<String> hashSet = new HashSet<>();
+        HashSet<String> hashSet1 = new HashSet<>();
+        for (String s : sarr) {
+            if (!hashSet.add(s)) {
+                hashSet1.add(s);
+            }
+        }
+        System.out.println(hashSet1);
 
     }
 
